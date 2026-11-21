@@ -1,0 +1,57 @@
+{
+  "dataset": "bjtu_rao",
+  "seeds": [
+    45
+  ],
+  "epochs": 100,
+  "batch_size": 32,
+  "micro_batch_size": 32,
+  "validation_batch_size": 16,
+  "eval_batch_size": 128,
+  "steps": 1000,
+  "cosine_offset": 0.008,
+  "width": 32,
+  "levels": 3,
+  "heads": 4,
+  "lr": 0.001,
+  "amp": true,
+  "output": "ardiff_rms_five_seed_100ep_rank32",
+  "smoke_only": false,
+  "smoke_batch_size": 32,
+  "step_target": "normalized",
+  "seed": 45,
+  "model": "ARDiff noisy-input RMS adaptation",
+  "parameters": {
+    "diffusion": 966561,
+    "nspm": 2835201
+  },
+  "data_sha256": {
+    "train/x.npy": "1df576db54207812d8be218967a71983130cef2033368120da973f246f40be27",
+    "train/y.npy": "6352efec76d6902332bf73ad98be96686ff6469e0198ac4d9ba3f23c2257e01c",
+    "val/x.npy": "8e893c49a972e965becd4cca488ebbdcc552a95423e84c64bc5c27b0ecf2828a",
+    "val/y.npy": "cdbb6c2631fb5677d09e8317233910d76c2cfcb20bb70f0f0a970600dece6daf",
+    "test/x.npy": "d251c55dba0d28b5b251f7f3acdb5686b1db6f51e00482c491d5ab3c3129780d",
+    "test/y.npy": "cdbb6c2631fb5677d09e8317233910d76c2cfcb20bb70f0f0a970600dece6daf"
+  },
+  "reference_sha256": "a33d9a9d9659d416fb3b3dfd737ccb8ffc3b3ed4a216017e04ef13d97cf23b21",
+  "normalization": {
+    "outer": "observed noisy RMS only; multiply back after restoration",
+    "training_reference": "clean RMS defines unit-power forward synthesis, not input scaling",
+    "backbone_input": "noisy/current diffusion state divided by its own RMS",
+    "targets": "corresponding clean and noise targets use the same corrupted-state scale",
+    "noise_output": "multiply normalized noise by current-state RMS before reverse update"
+  },
+  "loss": "normalized-coordinate epsilon MSE + MAE(t/T); no class or POD loss",
+  "scope": "Normalization adaptation, not exact original-paper or a scalar-only MinMax ablation",
+  "vsm_boundary": "Original VSM call retained. Positive scale-equivariance makes initial VSM gain cancel with its inverse in exact arithmetic; not a VSM benefit test.",
+  "inherited_architecture_choices": [
+    "width/depth/head count selected by project",
+    "three equal-width rFFT bands; channel-wise LayerNorm; one outer FAM residual",
+    "NSPM global average pooling",
+    "standard cosine offset/beta cap; not a reconstruction of paper Table 5"
+  ],
+  "reference": "same clean-train frozen Full/POD/Random, rank32",
+  "repetitions": "one seed initially; not five-fold CV",
+  "model_id": "ardiff_rms",
+  "variant": "main"
+}
