@@ -2,6 +2,9 @@
 
 [简体中文](README.zh-CN.md)
 
+### The full code datasets weights and results are at [BaiduDisk](https://pan.baidu.com/s/1ShGtshUeCfV32QvTyMZBjQ?pwd=bwfd)
+
+
 Research code for **Beyond Waveform Fidelity: A Low-Dimensional Spectral View of Denoised Vibration Signals for Fault Diagnosis**.
 
 A denoiser that reconstructs the reference waveform more closely does not necessarily produce signals that are easier to classify. We evaluate the **same denoised outputs** using full envelope-spectrum features (Full), a low-dimensional representation learned from clean training features (POD), and dimension-matched random projections (Random). A separate classifier is trained on clean data for each representation and held fixed during testing. The comparison changes the representation used for diagnosis, not the waveform.
