@@ -1,0 +1,8 @@
+numpy==2.0.1
+scipy==1.13.1
+scikit-learn==1.6.1
+pandas==2.3.3
+mambapy==1.2.0
+threadpoolctl
+joblib
+matplotlib
