@@ -1,0 +1,113 @@
+{
+  "dataset": "bjtu_rao",
+  "sources": [
+    {
+      "label": 0,
+      "name": "normal",
+      "path": "data_gearbox_M0_G0_LA0_RA0_20Hz_0kN.csv",
+      "sha256": "eac51cf2cedb90cf09fc279c0c38cb6816a6ea1c080cea8738d240716923f9a8",
+      "channel": "CH11",
+      "raw_points": 640000,
+      "raw_time_cuts": [
+        0,
+        448000,
+        544000,
+        640000
+      ]
+    },
+    {
+      "label": 1,
+      "name": "gear_root_crack",
+      "path": "data_gearbox_M0_G1_LA0_RA0_20Hz_0kN.csv",
+      "sha256": "f448840ea03a7cfeb03a2bfa8b95477e7abd9123609266829768bb9e80a90b52",
+      "channel": "CH11",
+      "raw_points": 640000,
+      "raw_time_cuts": [
+        0,
+        448000,
+        544000,
+        640000
+      ]
+    },
+    {
+      "label": 2,
+      "name": "gear_surface_wear",
+      "path": "data_gearbox_M0_G2_LA0_RA0_20Hz_0kN.csv",
+      "sha256": "0991b58d84819ecc1befda80ad8453b7ea4d362e9b8287707c9ec7a57c4c1831",
+      "channel": "CH11",
+      "raw_points": 640000,
+      "raw_time_cuts": [
+        0,
+        448000,
+        544000,
+        640000
+      ]
+    },
+    {
+      "label": 5,
+      "name": "bearing_inner_race",
+      "path": "data_gearbox_M0_G5_LA0_RA0_20Hz_0kN.csv",
+      "sha256": "150581862f774e616f5b8cff483252e66bbf34ec68798cad62865f433ed0b972",
+      "channel": "CH11",
+      "raw_points": 640000,
+      "raw_time_cuts": [
+        0,
+        448000,
+        544000,
+        640000
+      ]
+    },
+    {
+      "label": 6,
+      "name": "bearing_outer_race",
+      "path": "data_gearbox_M0_G6_LA0_RA0_20Hz_0kN.csv",
+      "sha256": "8285e0e3eee6c2be4f78c9253c15da296f3891cc25b502730d06486f28c6998c",
+      "channel": "CH11",
+      "raw_points": 640000,
+      "raw_time_cuts": [
+        0,
+        448000,
+        544000,
+        640000
+      ]
+    },
+    {
+      "label": 7,
+      "name": "bearing_rolling_element",
+      "path": "data_gearbox_M0_G7_LA0_RA0_20Hz_0kN.csv",
+      "sha256": "200e6dc1f4c3c24c23b36adc568d00d900106f61a57408bb0c7458d2048d8699",
+      "channel": "CH11",
+      "raw_points": 640000,
+      "raw_time_cuts": [
+        0,
+        448000,
+        544000,
+        640000
+      ]
+    }
+  ],
+  "window_length": 4096,
+  "stride": 3072,
+  "overlap": 0.25,
+  "raw_time_split_ratios": [
+    0.7,
+    0.15,
+    0.15
+  ],
+  "split_samples": {
+    "train": 870,
+    "val": 180,
+    "test": 180
+  },
+  "array_sha256": {
+    "train/x.npy": "1df576db54207812d8be218967a71983130cef2033368120da973f246f40be27",
+    "train/y.npy": "6352efec76d6902332bf73ad98be96686ff6469e0198ac4d9ba3f23c2257e01c",
+    "val/x.npy": "8e893c49a972e965becd4cca488ebbdcc552a95423e84c64bc5c27b0ecf2828a",
+    "val/y.npy": "cdbb6c2631fb5677d09e8317233910d76c2cfcb20bb70f0f0a970600dece6daf",
+    "test/x.npy": "d251c55dba0d28b5b251f7f3acdb5686b1db6f51e00482c491d5ab3c3129780d",
+    "test/y.npy": "cdbb6c2631fb5677d09e8317233910d76c2cfcb20bb70f0f0a970600dece6daf"
+  },
+  "audit": "PASS: raw intervals, duplicate windows, shared 1024-point blocks",
+  "limitations": "Same-record disjoint-time evaluation, not independent recordings or bearings.",
+  "class_selection": "Prespecified HUST nine / BJTU six for this rerun; BJTU subset was selected in prior exploration."
+}

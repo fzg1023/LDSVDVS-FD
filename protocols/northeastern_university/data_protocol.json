@@ -1,0 +1,154 @@
+{
+  "dataset": "NEU thirteen states, nominal10Nm/1000r filename condition",
+  "sources": [
+    {
+      "path": "(qingbo)-(zhengchang)-10Nm-1000r.csv",
+      "label": 0,
+      "name": "(qingbo)-(zhengchang)-10Nm-1000r",
+      "sha256": "9e1aab123e04616feda97839d602d85266981d154af557e24ad271b13bf1279a",
+      "header_samples": 460800,
+      "actual_samples": 460801,
+      "channel_zero_based": 0,
+      "skip_rows": 4
+    },
+    {
+      "path": "(qinglie)-(zhengchang)-10Nm-1000r.csv",
+      "label": 1,
+      "name": "(qinglie)-(zhengchang)-10Nm-1000r",
+      "sha256": "9654e50258110246b77cb53ac278b3a4c75d92f2ce46487f1746305ea1faf7a9",
+      "header_samples": 460800,
+      "actual_samples": 460801,
+      "channel_zero_based": 0,
+      "skip_rows": 4
+    },
+    {
+      "path": "(qingmo)-(zhengchang)-10Nm-1000r.csv",
+      "label": 2,
+      "name": "(qingmo)-(zhengchang)-10Nm-1000r",
+      "sha256": "e790110713ee59cd48fbef973d28710eb9936cb47156c5365945572ecec39e07",
+      "header_samples": 460800,
+      "actual_samples": 460801,
+      "channel_zero_based": 0,
+      "skip_rows": 4
+    },
+    {
+      "path": "(zhengchang)-(qingduan)-10Nm-1000r.csv",
+      "label": 3,
+      "name": "(zhengchang)-(qingduan)-10Nm-1000r",
+      "sha256": "c336d58a2cfdf1bf24583043a08a65d40031a3cc5a91dcd8f5b828c023522c49",
+      "header_samples": 460800,
+      "actual_samples": 460801,
+      "channel_zero_based": 0,
+      "skip_rows": 4
+    },
+    {
+      "path": "(zhengchang)-(qinglie)-10Nm-1000r.csv",
+      "label": 4,
+      "name": "(zhengchang)-(qinglie)-10Nm-1000r",
+      "sha256": "8199ee3de240ef6893a3a4b2cbf14f833ca11c2cf3b38eaf1f9db3c28b45d5bb",
+      "header_samples": 460800,
+      "actual_samples": 460801,
+      "channel_zero_based": 0,
+      "skip_rows": 4
+    },
+    {
+      "path": "(zhengchang)-(qingmo)-10Nm-1000r.csv",
+      "label": 5,
+      "name": "(zhengchang)-(qingmo)-10Nm-1000r",
+      "sha256": "b8711cc921bd7b1e88ddaa44f19cb7107873369436affc14b9b3a468271692cc",
+      "header_samples": 460800,
+      "actual_samples": 460801,
+      "channel_zero_based": 0,
+      "skip_rows": 4
+    },
+    {
+      "path": "(zhengchang)-(zhengchang)-10Nm-1000r.csv",
+      "label": 6,
+      "name": "(zhengchang)-(zhengchang)-10Nm-1000r",
+      "sha256": "1179ade0292d510d80259ddac52fedefaf32e0cc8272c4ae74ece5e477fd1d68",
+      "header_samples": 460800,
+      "actual_samples": 460801,
+      "channel_zero_based": 0,
+      "skip_rows": 4
+    },
+    {
+      "path": "(zhengchang)-(zhongbo)-10Nm-1000r.csv",
+      "label": 7,
+      "name": "(zhengchang)-(zhongbo)-10Nm-1000r",
+      "sha256": "afbf6326e97e8eb7070b87e148325dded86187547c05680cdcc4e63d4d3e6777",
+      "header_samples": 460800,
+      "actual_samples": 460801,
+      "channel_zero_based": 0,
+      "skip_rows": 4
+    },
+    {
+      "path": "(zhengchang)-(zhongduan)-10Nm-1000r.csv",
+      "label": 8,
+      "name": "(zhengchang)-(zhongduan)-10Nm-1000r",
+      "sha256": "f07af9f3bd43f6c13f086ee224907e23a580dfbad9cb087358d412a908c1170d",
+      "header_samples": 460800,
+      "actual_samples": 460801,
+      "channel_zero_based": 0,
+      "skip_rows": 4
+    },
+    {
+      "path": "(zhengchang)-(zhonglie)-10Nm-1000r.csv",
+      "label": 9,
+      "name": "(zhengchang)-(zhonglie)-10Nm-1000r",
+      "sha256": "5e5b218f4afbfe5740ed4da2f504c327b53ec664b83273e2af6eaab26094f3f9",
+      "header_samples": 460800,
+      "actual_samples": 460801,
+      "channel_zero_based": 0,
+      "skip_rows": 4
+    },
+    {
+      "path": "(zhongbo)-(zhengchang)-10Nm-1000r.csv",
+      "label": 10,
+      "name": "(zhongbo)-(zhengchang)-10Nm-1000r",
+      "sha256": "277a20c2179e992a97a77685c1d6af711b337fac4b93a905402dc913855a92ea",
+      "header_samples": 460800,
+      "actual_samples": 460801,
+      "channel_zero_based": 0,
+      "skip_rows": 4
+    },
+    {
+      "path": "(zhongduan)-(zhengchang)-10Nm-1000r.csv",
+      "label": 11,
+      "name": "(zhongduan)-(zhengchang)-10Nm-1000r",
+      "sha256": "5ab493cd2006da10b46f9b0bed62751e3e45a5d4454abd2a9ab3962512acfc86",
+      "header_samples": 460800,
+      "actual_samples": 460801,
+      "channel_zero_based": 0,
+      "skip_rows": 4
+    },
+    {
+      "path": "(zhonglie)-(zhengchang)-10Nm-1000r.csv",
+      "label": 12,
+      "name": "(zhonglie)-(zhengchang)-10Nm-1000r",
+      "sha256": "01b5565666d4af31852005f986be696bf65521b5d11226a3fd87a43487f28f84",
+      "header_samples": 460800,
+      "actual_samples": 460801,
+      "channel_zero_based": 0,
+      "skip_rows": 4
+    }
+  ],
+  "fs": 15360,
+  "window": 4096,
+  "stride": 3072,
+  "split": "Raw chronological70/15/15 BEFORE windowing; actual row counts retained",
+  "split_samples": {
+    "train": 1352,
+    "val": 286,
+    "test": 286
+  },
+  "array_sha256": {
+    "train/x.npy": "750dc856b267391e7d569a3caa252137da8b3ceab8bf61def7346fc84215458a",
+    "train/y.npy": "53bd270a756e5e3af36b246f8bef1c6e203098adc89791bc7359dc4b3e6fb9f2",
+    "val/x.npy": "c5dc1a1486178c27da964a846c665396c0c9ad39950719927882984e3543c0d9",
+    "val/y.npy": "40fee75fed1acdc775d7cbfc575bc93237693240aeb063ca44fd7e089e630ac5",
+    "test/x.npy": "0c559ca7e13ec40a530b2f5e55d282a080297be789029ff86d9f878980162a06",
+    "test/y.npy": "40fee75fed1acdc775d7cbfc575bc93237693240aeb063ca44fd7e089e630ac5"
+  },
+  "scope": "Same-record disjoint-time, not independent acquisition or unseen gear generalization",
+  "header_note": "Header-declared and actual sample counts both recorded; no deletion to force agreement"
+}

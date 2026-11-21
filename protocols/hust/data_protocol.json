@@ -1,0 +1,155 @@
+{
+  "dataset": "hust",
+  "sources": [
+    {
+      "label": 0,
+      "name": "H",
+      "path": "H_20Hz.csv",
+      "sha256": "1da4be03e5e2a7f286447f8bf1cbe9fe1ecca0df9fafe0cb0651b64200efa715",
+      "channel": "column_3",
+      "raw_points": 262144,
+      "raw_time_cuts": [
+        0,
+        183500,
+        222822,
+        262144
+      ]
+    },
+    {
+      "label": 1,
+      "name": "0.5X_I",
+      "path": "0.5X_I_20Hz.csv",
+      "sha256": "b015b62d724ee4ad767aa61c25862fadcd0025ce7d804605fa3f96b625d1e2fb",
+      "channel": "column_3",
+      "raw_points": 262144,
+      "raw_time_cuts": [
+        0,
+        183500,
+        222822,
+        262144
+      ]
+    },
+    {
+      "label": 2,
+      "name": "I",
+      "path": "I_20Hz.csv",
+      "sha256": "992217f9a635311f9f008f27685cadd74196abd030a0faea92740dcaae2d7a99",
+      "channel": "column_3",
+      "raw_points": 262144,
+      "raw_time_cuts": [
+        0,
+        183500,
+        222822,
+        262144
+      ]
+    },
+    {
+      "label": 3,
+      "name": "0.5X_O",
+      "path": "0.5X_O_20Hz.csv",
+      "sha256": "6029eaacfa0e116dabcf92621b67aba8f0c2d84f0207ef6296b3f04139170b24",
+      "channel": "column_3",
+      "raw_points": 262144,
+      "raw_time_cuts": [
+        0,
+        183500,
+        222822,
+        262144
+      ]
+    },
+    {
+      "label": 4,
+      "name": "O",
+      "path": "O_20Hz.csv",
+      "sha256": "77c1263befef095d8713f3f58648ed250eb79c32468c1d5f2075022af6963d97",
+      "channel": "column_3",
+      "raw_points": 262144,
+      "raw_time_cuts": [
+        0,
+        183500,
+        222822,
+        262144
+      ]
+    },
+    {
+      "label": 5,
+      "name": "0.5X_B",
+      "path": "0.5X_B_20Hz.csv",
+      "sha256": "f411de2c8ad1f6f69c6cad82c9d77d4c9562c05021f705f1024f2f5dd6f1cc63",
+      "channel": "column_3",
+      "raw_points": 262144,
+      "raw_time_cuts": [
+        0,
+        183500,
+        222822,
+        262144
+      ]
+    },
+    {
+      "label": 6,
+      "name": "B",
+      "path": "B_20Hz.csv",
+      "sha256": "43ce0d2cc390442a8f39147c56fb32ceac78ebe6468eea31b4187b84c4514f60",
+      "channel": "column_3",
+      "raw_points": 262144,
+      "raw_time_cuts": [
+        0,
+        183500,
+        222822,
+        262144
+      ]
+    },
+    {
+      "label": 7,
+      "name": "0.5X_C",
+      "path": "0.5X_C_20Hz.csv",
+      "sha256": "c8fe09b81ac139f52752c2ca67ad499b143699783e57ab023a1ab5ba238eea26",
+      "channel": "column_3",
+      "raw_points": 262144,
+      "raw_time_cuts": [
+        0,
+        183500,
+        222822,
+        262144
+      ]
+    },
+    {
+      "label": 8,
+      "name": "C",
+      "path": "C_20Hz.csv",
+      "sha256": "7321dc2b3b3a98dbc70476045c9235216a12ae6ba0bfab446b3a1893174ef53c",
+      "channel": "column_3",
+      "raw_points": 262144,
+      "raw_time_cuts": [
+        0,
+        183500,
+        222822,
+        262144
+      ]
+    }
+  ],
+  "window_length": 4096,
+  "stride": 3072,
+  "overlap": 0.25,
+  "raw_time_split_ratios": [
+    0.7,
+    0.15,
+    0.15
+  ],
+  "split_samples": {
+    "train": 531,
+    "val": 108,
+    "test": 108
+  },
+  "array_sha256": {
+    "train/x.npy": "d86d21b35c1d3d302b56d7767faff22fe68892c2f68f5011c406e6354df84e6d",
+    "train/y.npy": "cbdf206d5295435e9d944725bd3489b0914169c3120ffde0a067e651ad82c373",
+    "val/x.npy": "358a9efa2cedd3f73f09094caa958bbf00854be8b5afabae66525083f2eed9bd",
+    "val/y.npy": "1a369d2571c5284c1d473fbd0e121d2176c00f6c50f3c723d2e23762fad82c7b",
+    "test/x.npy": "5059ce44b89cb20653f19dda08a1cbe14e5314f75e400dc754db732ba44e12f6",
+    "test/y.npy": "1a369d2571c5284c1d473fbd0e121d2176c00f6c50f3c723d2e23762fad82c7b"
+  },
+  "audit": "PASS: raw intervals, duplicate windows, shared 1024-point blocks",
+  "limitations": "Same-record disjoint-time evaluation, not independent recordings or bearings.",
+  "class_selection": "Prespecified HUST nine / BJTU six for this rerun; BJTU subset was selected in prior exploration."
+}

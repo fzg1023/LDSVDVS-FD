@@ -1,0 +1,14 @@
+label,fault_type
+0,(qingbo)-(zhengchang)-10Nm-1000r
+1,(qinglie)-(zhengchang)-10Nm-1000r
+2,(qingmo)-(zhengchang)-10Nm-1000r
+3,(zhengchang)-(qingduan)-10Nm-1000r
+4,(zhengchang)-(qinglie)-10Nm-1000r
+5,(zhengchang)-(qingmo)-10Nm-1000r
+6,(zhengchang)-(zhengchang)-10Nm-1000r
+7,(zhengchang)-(zhongbo)-10Nm-1000r
+8,(zhengchang)-(zhongduan)-10Nm-1000r
+9,(zhengchang)-(zhonglie)-10Nm-1000r
+10,(zhongbo)-(zhengchang)-10Nm-1000r
+11,(zhongduan)-(zhengchang)-10Nm-1000r
+12,(zhonglie)-(zhengchang)-10Nm-1000r

@@ -1,0 +1,98 @@
+{
+  "dataset": "Ottawa UODS-VAFDC nine health/fault-stage classes",
+  "sources": [
+    {
+      "path": "H_1_0.csv",
+      "sha256": "bc13b53a77b5e4cc18f4b48ff8d33182677b0f64eb04f0c3157a2640512edb38",
+      "label": 0,
+      "name": "healthy",
+      "actual_samples": 420000,
+      "column": "Accelerometer"
+    },
+    {
+      "path": "I_1_1.csv",
+      "sha256": "9c0b7b700e84a330bd8112af99137d22e898fc3515d9c75b1923a7a2ab8f619f",
+      "label": 1,
+      "name": "inner_developing",
+      "actual_samples": 420000,
+      "column": "Accelerometer"
+    },
+    {
+      "path": "I_1_2.csv",
+      "sha256": "6a25dcc4c4d9b1cf222d8f42fa49d031127a759ba0555d9a952785b93cc243e0",
+      "label": 2,
+      "name": "inner_faulty",
+      "actual_samples": 420000,
+      "column": "Accelerometer"
+    },
+    {
+      "path": "O_6_1.csv",
+      "sha256": "24be723d493e3846e17dd3e28b99b8635aa34da7ba9ec2a39370a95c683e83a2",
+      "label": 3,
+      "name": "outer_developing",
+      "actual_samples": 420000,
+      "column": "Accelerometer"
+    },
+    {
+      "path": "O_6_2.csv",
+      "sha256": "71a5efc58f28313fff50b58d7ccaee9184af1c376b1cc007b69aa9bf52cf4554",
+      "label": 4,
+      "name": "outer_faulty",
+      "actual_samples": 420000,
+      "column": "Accelerometer"
+    },
+    {
+      "path": "B_11_1.csv",
+      "sha256": "a2a3098d1f613919e23346e211aec00947350a9719c65143cd09c0a6e143d3f4",
+      "label": 5,
+      "name": "ball_developing",
+      "actual_samples": 420000,
+      "column": "Accelerometer"
+    },
+    {
+      "path": "B_11_2.csv",
+      "sha256": "ac1472fb632fc6264b7fc2f825d51e053e4fed0313fb88080075022719ba927f",
+      "label": 6,
+      "name": "ball_faulty",
+      "actual_samples": 420000,
+      "column": "Accelerometer"
+    },
+    {
+      "path": "C_16_1.csv",
+      "sha256": "84158d32930bd8b74a460d70fc026e47f767b0a1d2bcb5a5ebdbbb5f2e5afe07",
+      "label": 7,
+      "name": "cage_developing",
+      "actual_samples": 420000,
+      "column": "Accelerometer"
+    },
+    {
+      "path": "C_16_2.csv",
+      "sha256": "c81fed6f43728953310dfc615accf300a8bd861eda3d4612dfc4c0df0ad1ffcd",
+      "label": 8,
+      "name": "cage_faulty",
+      "actual_samples": 420000,
+      "column": "Accelerometer"
+    }
+  ],
+  "fs": 42000,
+  "column": "Accelerometer",
+  "window": 4096,
+  "stride": 3072,
+  "split": "Raw chronological 70/15/15 BEFORE windowing",
+  "class_selection": "Exact same nine CSV files as prepare_ottawa_raw_9class_old_style.py",
+  "split_samples": {
+    "train": 855,
+    "val": 180,
+    "test": 180
+  },
+  "array_sha256": {
+    "train/x.npy": "081ddd109cf0d0b973615c907eab74e2773f07832adcacaf482fde9ca2b1e939",
+    "train/y.npy": "32d16b8e3a90023b34fb800bddc86f995684bbea6c813ffb290d721c5e379e2f",
+    "val/x.npy": "85a2bf1d0d38280906d41810966f1a8530dd7309ef42e4649b7890030264418d",
+    "val/y.npy": "1a6dc21d351ea59c4655e2d073fc55023996e975afc45b573b57cc3d143387f3",
+    "test/x.npy": "631e1062ec1ef7598cbfa0de861cbc38a98d20aa909cfa945fcfca1cb9bda5a9",
+    "test/y.npy": "1a6dc21d351ea59c4655e2d073fc55023996e975afc45b573b57cc3d143387f3"
+  },
+  "scope": "One record per class; same-record disjoint-time, not unseen bearings/acquisitions",
+  "confounds": "Ball faults have nominal zero load; others 400 N. Bearing identity and fault stage may contribute."
+}

@@ -1,0 +1,10 @@
+label,fault_type
+0,H
+1,0.5X_I
+2,I
+3,0.5X_O
+4,O
+5,0.5X_B
+6,B
+7,0.5X_C
+8,C

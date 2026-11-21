@@ -1,0 +1,5 @@
+label,fault_type
+0,normal
+1,inner_0.5x0.5mm
+2,inner_0.5x1.0mm
+3,outer_0.5x0.5mm

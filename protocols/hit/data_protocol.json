@@ -1,0 +1,95 @@
+{
+  "dataset": "HIT_intershaft_bearing_4class",
+  "source_files": [
+    {
+      "path": "data1.npy",
+      "shape": [
+        504,
+        8,
+        20480
+      ],
+      "dtype": "float64",
+      "sha256": "44aae77a964bc4269cd4e5648981385f416ad9a9c6e73e8ad508bb428dbec654",
+      "selected_blocks": 2
+    },
+    {
+      "path": "data2.npy",
+      "shape": [
+        450,
+        8,
+        20480
+      ],
+      "dtype": "float32",
+      "sha256": "daa9c7932f07a32288d695968b8b849152f35dfedd1fde804f42dfcc6fc6fd8d",
+      "selected_blocks": 1
+    },
+    {
+      "path": "data3.npy",
+      "shape": [
+        504,
+        8,
+        20480
+      ],
+      "dtype": "float64",
+      "sha256": "19bb052d1a95a8c1af6bcbbe2dfe52f68a1e66f78df939b19eaa440fec5a1872",
+      "selected_blocks": 2
+    },
+    {
+      "path": "data4.npy",
+      "shape": [
+        504,
+        8,
+        20480
+      ],
+      "dtype": "float64",
+      "sha256": "bf0161a9b0a233026166809cea22fcf911a40313c12407192cf227dadf24b111",
+      "selected_blocks": 2
+    },
+    {
+      "path": "data5.npy",
+      "shape": [
+        450,
+        8,
+        20480
+      ],
+      "dtype": "float64",
+      "sha256": "d6c79621b401a6224189e2ac0ede312dec44cecc65b5a19646e934c7d4f9c90e",
+      "selected_blocks": 2
+    }
+  ],
+  "class_map": {
+    "0": "normal",
+    "1": "inner_0.5x0.5mm",
+    "2": "inner_0.5x1.0mm",
+    "3": "outer_0.5x0.5mm"
+  },
+  "fs_hz": 25000,
+  "channel_1based": 4,
+  "lp_rpm": 3000,
+  "hp_rpm": 3600,
+  "window_length": 4096,
+  "stride": 3072,
+  "overlap": 0.25,
+  "split_method": "Within each selected 18-row block: 0:10 train, row10 gap, 11:14 val, row14 gap, 15:18 test",
+  "samples": {
+    "train": 540,
+    "val": 162,
+    "test": 162
+  },
+  "checks": "PASS separate source rows; >=20480-point inter-split gap within blocks; finite signals; no shared exact 1024-point blocks",
+  "limitations": [
+    "Within-block temporal testing, not independent-acquisition/bearing generalization",
+    "18-row block identity inferred from ordering and metadata; original acquisition IDs unavailable",
+    "Provided signals may already be scaled; no claim of physical-amplitude calibration",
+    "Reference/clean means no additional artificial noise, not an intrinsically noise-free measurement",
+    "One seed; classes not balanced; record macro F1 and balanced accuracy"
+  ],
+  "array_sha256": {
+    "train/x.npy": "30601e04e4a3c99e192532c71cc3b5e874869f7a7b3bc7010b449c1e6e89e8b6",
+    "train/y.npy": "3b3c508b05165afc0eefd52c40cefd5b361ff87d2420175a136ee2875117fb79",
+    "val/x.npy": "17bf48c564539020c37bbba256dcb935753d0fe7f8c2fccd019ac3bc12da5df6",
+    "val/y.npy": "d1d1a301391a2a839769e14be15a37006f9c35471df7129f1dcf8d9b55ab1caf",
+    "test/x.npy": "769c3f06315f632e42095db675597fd901583e0a16faf8b8e59670181969036d",
+    "test/y.npy": "d1d1a301391a2a839769e14be15a37006f9c35471df7129f1dcf8d9b55ab1caf"
+  }
+}

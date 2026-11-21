@@ -1,0 +1,10 @@
+label,fault_type
+0,healthy
+1,inner_developing
+2,inner_faulty
+3,outer_developing
+4,outer_faulty
+5,ball_developing
+6,ball_faulty
+7,cage_developing
+8,cage_faulty

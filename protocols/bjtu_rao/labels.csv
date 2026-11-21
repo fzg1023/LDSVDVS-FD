@@ -1,0 +1,7 @@
+label,fault_type
+0,normal
+1,gear_root_crack
+2,gear_surface_wear
+5,bearing_inner_race
+6,bearing_outer_race
+7,bearing_rolling_element

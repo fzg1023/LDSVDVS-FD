@@ -1,0 +1,13 @@
+split,label,fault_type,samples
+test,0,normal,54
+test,1,inner_0.5x0.5mm,36
+test,2,inner_0.5x1.0mm,36
+test,3,outer_0.5x0.5mm,36
+train,0,normal,180
+train,1,inner_0.5x0.5mm,120
+train,2,inner_0.5x1.0mm,120
+train,3,outer_0.5x0.5mm,120
+val,0,normal,54
+val,1,inner_0.5x0.5mm,36
+val,2,inner_0.5x1.0mm,36
+val,3,outer_0.5x0.5mm,36
