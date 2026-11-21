@@ -1,0 +1,21 @@
+{
+  "width": 32,
+  "levels": 3,
+  "heads": 4,
+  "steps": 1000,
+  "cosine_offset": 0.008,
+  "lr": 0.001,
+  "epochs": 100,
+  "batch_size": 32,
+  "micro_batch_size": 32,
+  "validation_batch_size": 16,
+  "eval_batch_size": 16,
+  "amp": true,
+  "step_target": "normalized",
+  "seed": 42,
+  "normalization": "Existing ARDiff noisy-input RMS coordinate adaptation",
+  "loss": "normalized epsilon MSE and normalized diffusion-step MAE; no class/POD loss",
+  "dataset": "hit",
+  "model_id": "ardiff_rms",
+  "variant": "main"
+}

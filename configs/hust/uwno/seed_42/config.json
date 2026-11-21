@@ -1,0 +1,96 @@
+{
+  "seed": 42,
+  "device": "cuda",
+  "data": {
+    "data_path": "datasets/hust",
+    "labels_path": null,
+    "data_key": null,
+    "label_key": null,
+    "signal_pair_mode": "first",
+    "split_ratios": {
+      "train": 0.7,
+      "val": 0.15,
+      "test": 0.15
+    },
+    "split_by_label": true,
+    "time_ordered": true,
+    "return_labels": true,
+    "batch_size": 64,
+    "num_workers": 0,
+    "train_snr_choices": [
+      -6,
+      -4,
+      -2,
+      0
+    ],
+    "test_snr_list": [
+      0,
+      -2,
+      -4,
+      -6
+    ],
+    "sample_normalization": "rms",
+    "source_type": "split_npy",
+    "normalization_source": "noisy"
+  },
+  "frequency": {
+    "mode": "envelope",
+    "normalize": true,
+    "eps": 1e-08,
+    "fs": 25600.0
+  },
+  "pod": {
+    "rank_list": [
+      4,
+      8,
+      16,
+      32,
+      64,
+      128,
+      256
+    ],
+    "rank": 32,
+    "basis_type": "frequency",
+    "center": true,
+    "standardize": false
+  },
+  "reference_encoder_model": {
+    "latent_dim": 64,
+    "hidden_channels": [
+      32,
+      64,
+      128
+    ],
+    "dropout": 0.1
+  },
+  "paths": {
+    "pod_analysis_dir": "observers/hust",
+    "pod_denoising_ablation_dir": "reruns"
+  },
+  "model": {
+    "base_channels": 32,
+    "depth": 4,
+    "pod_fusion_mode": "film",
+    "residual_denoising": true,
+    "use_residual_limit": false,
+    "residual_scale": 0.1
+  },
+  "training": {
+    "epochs": 100,
+    "lr": 0.0002,
+    "weight_decay": 0.0001,
+    "grad_clip": 1.0,
+    "eval_every": 1
+  },
+  "loss_weights": {
+    "lambda_rec": 1.0,
+    "lambda_freq": 0.05,
+    "lambda_pod_coeff": 0.01,
+    "lambda_pod_spec": 0.05,
+    "lambda_out": 0.01,
+    "lambda_graph": 0.001
+  },
+  "dataset": "hust",
+  "model_id": "uwno",
+  "variant": "main"
+}
